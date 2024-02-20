@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url(..//..//recsource/font/get_schwifty.ttf);
+}
+.containerFooter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.link{
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: darkgreen;
+    font-family: 'Get Schwifty';
+    font-size: 25px;
+}

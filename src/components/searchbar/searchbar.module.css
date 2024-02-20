@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url(..//..//recsource/font/get_schwifty.ttf);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    font-family: 'Get Schwifty';
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: yellowgreen;
+}
+.input:focus {
+    background-color: darkgreen;
+    color: yellowgreen;
+}
+.button {
+    font-family: 'Get Schwifty';
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: yellowgreen;
+}
+.button:hover {
+    cursor: pointer;
+background-color: black;
+}

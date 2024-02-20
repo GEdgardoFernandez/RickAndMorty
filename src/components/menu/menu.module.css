@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Get Schwifty';
+    src: url(..//..//recsource/font/get_schwifty.ttf);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Get Schwifty';
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+ul li {
+    margin: 5px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: darkgreen;
+    border: 5px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellowgreen;
+    background-color: darkgreen;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}

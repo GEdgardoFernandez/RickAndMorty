@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import Cards from './components/cards/Cards.jsx';
+import Footer from './components/footer/Footer.jsx';
+import SearchBar from './components/searchbar/SearchBar.jsx';
+import Menu from './components/menu/Menu.jsx';
+import characters from './data.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <div className='App'>
+         <div className='header'>
+         <Menu />
+         <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+         </div>
+         <div className='container'> 
+         <Cards characters={characters} />
+         
+         </div>
+         <div className='footer'>
+            <Footer /> 
+         </div>
+      </div>
+   );
 }
 
 export default App;
