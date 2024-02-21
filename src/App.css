@@ -1,6 +1,7 @@
+@import url(..//src/recsource/styleVar/var.css);
 .App {
    text-align: center;
-   background-color: yellowgreen;
+   background-color: var(--background);
 }
 .container {
    display: flex;
@@ -17,11 +18,4 @@
    justify-content: center;
 }
 
-.footer {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-   background-color: darkgreen;
-   color: yellowgreen;
-}
+

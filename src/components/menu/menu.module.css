@@ -1,3 +1,4 @@
+@import url(..//..//recsource/styleVar/var.css);
 @font-face {
     font-family: 'Get Schwifty';
     src: url(..//..//recsource/font/get_schwifty.ttf);
@@ -23,17 +24,21 @@ ul li {
 }
 
 a {
-    color: darkgreen;
+    color: var(--inputFocus);
     border: 5px;
     margin: 5px;
     text-decoration: none;
+    height: 15px;
+    width: 15px;
 }
 
 a:hover {
-    color: yellowgreen;
-    background-color: darkgreen;
-    cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.5s;
+    color: var(--background);
+    border-radius: 80%;
+    background-color: rgba(23, 226, 84, 0.4);
+    border-color: rgb(20, 236, 85);
+    text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+    box-shadow: 0 0 50px rgb(42, 145, 73), 0 0 30px rgb(42, 145, 73),
+      0 0 60px rgb(42, 145, 73), 0 0 120px rgb(42, 145, 73);
+
 }

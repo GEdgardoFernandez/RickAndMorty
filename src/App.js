@@ -5,20 +5,19 @@ import SearchBar from './components/searchbar/SearchBar.jsx';
 import Menu from './components/menu/Menu.jsx';
 import characters from './data.js';
 
+
 function App() {
    return (
-      <div className='App'>
+      <div className='App' data-theme='dark'>
          <div className='header'>
          <Menu />
          <SearchBar onSearch={(characterID) => window.alert(characterID)} />
          </div>
          <div className='container'> 
          <Cards characters={characters} />
-         
          </div>
-         <div className='footer'>
-            <Footer /> 
-         </div>
+         <Footer />
+
       </div>
    );
 }

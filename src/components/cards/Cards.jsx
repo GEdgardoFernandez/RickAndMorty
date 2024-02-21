@@ -5,7 +5,7 @@ export default function Cards(props) {
       {
          characters.map((character) => {
             return <Card
-               id={character.id}
+               key={character.id}
                name={character.name}
                status={character.status}
                species={character.species}

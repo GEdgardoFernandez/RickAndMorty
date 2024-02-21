@@ -14,18 +14,39 @@
     border-radius: 5px;
     border: 1px solid black;
     background-color: yellowgreen;
+    margin: 10px;
+}
+.input:hover {
+    background-color: rgb(23, 226, 84);
+    border-color: rgb(20, 236, 85);
+    text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+    box-shadow: 0 0 50px rgb(42, 145, 73), 0 0 30px rgb(42, 145, 73),
+      0 0 60px rgb(42, 145, 73), 0 0 120px rgb(42, 145, 73);
 }
 .input:focus {
     background-color: darkgreen;
     color: yellowgreen;
+    box-shadow: 5px 5px 5px 0px lime;
 }
 .button {
     font-family: 'Get Schwifty';
     border-radius: 5px;
     background-color: darkgreen;
     color: yellowgreen;
+    margin: 10px;
 }
 .button:hover {
+    color: darkgreen;
     cursor: pointer;
-background-color: black;
+    background-color: rgb(23, 226, 84);
+    border-color: rgb(20, 236, 85);
+    text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+    box-shadow: 0 0 50px rgb(42, 145, 73), 0 0 30px rgb(42, 145, 73),
+      0 0 60px rgb(42, 145, 73), 0 0 120px rgb(42, 145, 73);
+}
+.button:active {
+    width: 50px;
+    height: 20px;
+    letter-spacing: 0px;
+    font-size: smaller;
 }
