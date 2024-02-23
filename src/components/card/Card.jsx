@@ -7,23 +7,23 @@ const Card = function (props) {
          <div>
             <div className={style.info}>
             <h2>Name: </h2>
-            <p>{props.name}</p>
+            <p className={style.elementoP}>{props.name}</p>
             </div> 
             <div className={style.info}>
             <h2>Status: </h2>
-            <p>{props.status}</p>
+            <p className={style.elementoP}>{props.status}</p>
             </div>
             <div className={style.info}>
             <h2>Specie: </h2>
-            <p>{props.species}</p>
+            <p className={style.elementoP}>{props.species}</p>
             </div>
             <div className={style.info}>
             <h2>Gender: </h2>
-            <p>{props.gender}</p>
+            <p className={style.elementoP}>{props.gender}</p>
             </div>
             <div className={style.info}>
             <h2>Origin: </h2>
-             <p>{props.origin}</p>
+             <p className={style.elementoP}>{props.origin}</p>
             </div>   
          </div>
          <div>

@@ -24,7 +24,10 @@ ul li {
 }
 
 a {
-    color: var(--inputFocus);
+    color: limegreen;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 50px black, 0 0 20px black, 0 0 15px black;
     border: 5px;
     margin: 5px;
     text-decoration: none;
