@@ -5,8 +5,10 @@
    padding: 0;
 }
 .App {
-   background-image: url(./recsource/fondos/fondo02.jpeg);
+   background-image: url(./recsource/fondos/wallpaperbetter.com_1920x1080.jpg);
    background-size: cover;
+   min-height: 100vh;
+   background-attachment: fixed;
    text-align: center;
 }
 .container {
@@ -16,7 +18,6 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
-   position: relative;
 }
 
 .header {

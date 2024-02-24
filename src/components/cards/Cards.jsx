@@ -1,6 +1,18 @@
 import Card from '../card/Card.jsx';
-import characters from '..//..//data.js';
-export default function Cards(props) {
+import { useEffect, useState } from 'react';
+import NavPage from '..//navpage/navpage.jsx';
+import style from './cards.module.css'
+const Cards = function(props) {
+   const [page, setPage] = useState(1);
+   const [characters, setCharacters] = useState([]);
+   useEffect(() => {
+      async function fetchData() {
+         const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
+         const data = await response.json();
+         setCharacters(data.results);
+      }
+      fetchData();
+   }, [page]);
    return <div className='container'>
       {
          characters.map((character) => {
@@ -16,5 +28,9 @@ export default function Cards(props) {
             />
          })
       }
+       <NavPage page={page} setPage={setPage}/>
    </div>;
+  
 }
+
+export default Cards;

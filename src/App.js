@@ -5,14 +5,18 @@ import SearchBar from './components/searchbar/SearchBar.jsx';
 import Menu from './components/menu/Menu.jsx';
 import characters from './data.js';
 import Video from './components/backgroundvideo/video.jsx';
+import NavPage from './components/navpage/navpage.jsx';
 
 function App() {
+
    return (
       <div className='App' data-theme='dark'>
          <Video />
          <div className='header'>
          <Menu />
          <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+         <div>
+         </div>
          </div>
          <div className='container'> 
          <Cards characters={characters} />
