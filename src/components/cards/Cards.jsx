@@ -1,8 +1,7 @@
 import Card from '../card/Card.jsx';
 import { useEffect, useState } from 'react';
 import NavPage from '..//navpage/navpage.jsx';
-import style from './cards.module.css'
-const Cards = function(props) {
+const Cards = function (props) {
    const [page, setPage] = useState(1);
    const [characters, setCharacters] = useState([]);
    useEffect(() => {
@@ -13,7 +12,12 @@ const Cards = function(props) {
       }
       fetchData();
    }, [page]);
-   return <div className='container'>
+   return <div>
+
+      <div >
+         <NavPage page={page} setPage={setPage}/>
+      </div>
+      <div className='container'>
       {
          characters.map((character) => {
             return <Card
@@ -28,9 +32,12 @@ const Cards = function(props) {
             />
          })
       }
-       <NavPage page={page} setPage={setPage}/>
+      </div>
+      <div>
+         <NavPage page={page} setPage={setPage} />
+      </div>
    </div>;
-  
+
 }
 
 export default Cards;

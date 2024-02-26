@@ -1,13 +1,11 @@
 import style from './navpage.module.css';
-import { useState } from 'react';
 const NavPage = (props) => {
-    const [count, setCount] = useState(1);
     return (
     <div className={style.containerP}>
         
-        <button className={style.buttonP} onClick={() => props.setPage(props.page - 1)}>Home</button>
+        <button className={style.buttonP} onClick={() => props.setPage(props.page>=1 && props.page - props.page +1)}>Home</button>
         <p className={style.elementP}>Page: {props.page} </p>
-        <button className={style.buttonP} onClick={() => props.setPage(props.page + 1)}>Next</button>
+        <button className={style.buttonP} onClick={() => props.setPage(props.page < 42  && props.page + 1)}>Next</button>
     </div>   
     )
 

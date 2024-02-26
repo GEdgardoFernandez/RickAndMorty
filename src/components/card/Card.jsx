@@ -27,7 +27,7 @@ const Card = function (props) {
             </div>   
          </div>
          <div>
-            <img src={props.image} alt='Rick Sanchez' className={style.img} />
+            <img src={props.image} alt='Personaje' className={style.img} />
          </div>  
       </div>
    );

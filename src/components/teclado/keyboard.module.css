@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Black Ops One';
+    src: url('..//..//recsource/font/BlackOpsOne-Regular.ttf');
+}
+.botonesStyle {
+    background-color: rgb(32, 31, 31);
+    color: lightgrey;
+    height: 40px;
+    width: 40px;
+    font-family: 'Black Ops One';
+    font-size: 30px;
+}
+
+.tdLine {
+    border: 7px solid gray;
+
+}

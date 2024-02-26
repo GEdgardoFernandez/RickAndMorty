@@ -5,7 +5,7 @@ import SearchBar from './components/searchbar/SearchBar.jsx';
 import Menu from './components/menu/Menu.jsx';
 import characters from './data.js';
 import Video from './components/backgroundvideo/video.jsx';
-import NavPage from './components/navpage/navpage.jsx';
+import Modal from './components/modal/modal.jsx';
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
          <Menu />
          <SearchBar onSearch={(characterID) => window.alert(characterID)} />
          <div>
+         <Modal />
          </div>
          </div>
          <div className='container'> 

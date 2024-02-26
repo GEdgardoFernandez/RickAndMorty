@@ -5,6 +5,7 @@
 .containerP {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 .buttonP {
     font-family: 'Get Schwifty';

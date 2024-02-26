@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Stardos Stencil';
+    src: url(..//..//recsource/font/StardosStencil-Regular.ttf);
+}
+.Display{
+    width: 152px;
+    height: 60px;
+    background-color: rgba(183, 13, 13, 0.534);
+    color: rgb(0, 0, 0);
+    font-family: 'Stardos Stencil';
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 7px solid gray;
+}
