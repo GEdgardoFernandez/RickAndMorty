@@ -11,14 +11,14 @@ const Modal = () => {
     console.log("Código ingresado:", displayValue);
     if (displayValue === '0137') {
       alert("Código incorrecto. Intenta de nuevo.");
-      
+
     } else {
       alert("Código correcto. ¡Bienvenido!");
       handleCloseModal();
-      
+
     }
   };
-  
+
   const handleCloseModal = () => {
     console.log("Cerrando modal");
     setIsModalOpen(false);

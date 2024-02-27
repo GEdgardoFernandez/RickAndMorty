@@ -10,7 +10,7 @@ const KeyBoard = function (props) {
 	const handleButtonClick = (value) => {
 		const updatedValue = (displayValue + value).slice(0, 4);
 		setDisplayValue(updatedValue);
-	  };
+	};
 
 
 	function handleDelete() {

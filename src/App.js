@@ -6,6 +6,7 @@ import Menu from './components/menu/Menu.jsx';
 import characters from './data.js';
 import Video from './components/backgroundvideo/video.jsx';
 import Modal from './components/modal/modal.jsx';
+import Switch from './components/switch/Switch.jsx';
 
 function App() {
 
@@ -13,14 +14,15 @@ function App() {
       <div className='App' data-theme='dark'>
          <Video />
          <div className='header'>
-         <Menu />
-         <SearchBar onSearch={(characterID) => window.alert(characterID)} />
-         <div>
-         <Modal />
+            <Menu />
+            <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+         <Switch/>
+            <div>
+               <Modal />
+            </div>
          </div>
-         </div>
-         <div className='container'> 
-         <Cards characters={characters} />
+         <div className='container'>
+            <Cards characters={characters} />
          </div>
          <Footer />
 

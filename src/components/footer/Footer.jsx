@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div id={footerStyles.copyright}>
             <p>
-            © All rights reserved. | Design by Guillermo Fernandez.
+                © All rights reserved. | Design by Guillermo Fernandez.
             </p>
             <ul className={footerStyles.contact}>
                 <li>

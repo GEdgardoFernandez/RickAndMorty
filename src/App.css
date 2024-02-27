@@ -1,16 +1,20 @@
 @import url(..//src/recsource/styleVar/var.css);
+
 /*@import url(./recsource/video/background.mp4);*/
-*{
+* {
    margin: 0;
    padding: 0;
 }
+
 .App {
    background-image: url(./recsource/fondos/wallpaperbetter.com_1920x1080.jpg);
    background-size: cover;
    min-height: 100vh;
    background-attachment: fixed;
    text-align: center;
+
 }
+
 .container {
 
    display: flex;
@@ -18,14 +22,18 @@
    flex-wrap: wrap;
    justify-content: center;
    align-items: center;
+   animation: toggle__animation 3s infinite;
 }
 
 .header {
+   padding-top: 20px;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   justify-content: center;   
+   justify-content: space-around;
+
 }
+
 video {
    position: absolute;
    top: 0;
@@ -35,6 +43,7 @@ video {
    object-fit: cover;
    position: absolute;
 }
+
 .overlay {
    position: absolute;
    height: 100%;
@@ -45,3 +54,14 @@ video {
 }
 
 
+@keyframes toggle__animation {
+
+   0%,
+   100% {
+       transform: translateY(-10px)  rotateY(-10deg);
+   }
+
+   50% {
+       transform: translateY(0px)  rotateY(-10deg);
+   }
+}

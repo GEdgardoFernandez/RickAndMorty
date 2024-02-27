@@ -1,6 +1,6 @@
 import React from "react";
 
-const Video  = () => {
+const Video = () => {
     <div>
         <video autoPlay loop muted></video>
         <div className="overlay"></div>
