@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./modal.module.css";
-import KeyBoard from "../teclado/keyboard";
+import KeyBoard from "../teclado/keyloger";
 
 
 const Modal = () => {
@@ -34,7 +34,6 @@ const Modal = () => {
 
   return (
     <div style={modalStyles} className={style.containerModal}>
-      <h1>MODAL PRUEBA</h1>
       <KeyBoard onOk={handleVerification} onDelete={handleDelete} setDisplayValue={setDisplayValue} />
     </div>
   );
