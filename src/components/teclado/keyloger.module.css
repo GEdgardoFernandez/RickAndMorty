@@ -16,6 +16,7 @@
     overflow: hidden;
     z-index: +1;
     border-radius: 20px;
+    animation: toggle__animation 3s infinite;
   }
   
   /*------input and submit section-------*/
@@ -293,3 +294,15 @@
     animation-duration: 1.6s;
   }
   
+  @keyframes toggle__animation {
+
+    0%,
+    100% {
+        transform: translateY(-10px)  rotateY(-10deg);
+    }
+ 
+    50% {
+        transform: translateY(0px)  rotateY(-10deg);
+    }
+ }
+ 

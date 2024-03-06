@@ -35,6 +35,13 @@ const Modal = () => {
   return (
     <div style={modalStyles} className={style.containerModal}>
       <KeyBoard onOk={handleVerification} onDelete={handleDelete} setDisplayValue={setDisplayValue} />
+      <br />
+      <section className={style.bgStars}>
+        <span className={style.star}></span>
+        <span className={style.star}></span>
+        <span className={style.star}></span>
+        <span className={style.star}></span>
+      </section>
     </div>
   );
 };

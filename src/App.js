@@ -1,31 +1,21 @@
 import './App.css';
-import Cards from './components/cards/Cards.jsx';
-import Footer from './components/footer/Footer.jsx';
-import SearchBar from './components/searchbar/SearchBar.jsx';
-import Menu from './components/menu/Menu.jsx';
-import characters from './data.js';
-import Video from './components/backgroundvideo/video.jsx';
-import Modal from './components/modal/modal.jsx';
-import Switch from './components/switch/Switch.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Landing from './views/Landing.jsx';
+import Home from './views/Home.jsx';
+import About from './views/About.jsx';
 
 function App() {
 
-   return (
+   return ( 
       <div className='App' data-theme='dark'>
-         <Video />
-         <div className='header'>
-            <Menu />
-            <SearchBar onSearch={(characterID) => window.alert(characterID)} />
-         <Switch/>
-            <div>
-               <Modal />
-            </div>
-         </div>
-         <div className='container'>
-            <Cards characters={characters} />
-         </div>
-         <Footer />
+         <Routes>
+         <Route path='/' element={<Landing />}/>
 
+         <Route path='/home' element={<Home />}/>
+
+         <Route path='/about' element={<About />}/>
+
+         </Routes>
       </div>
    );
 }

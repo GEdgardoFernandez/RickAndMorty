@@ -30,9 +30,8 @@
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding-left: 150px;
-   justify-content: space-between;
-
+   align-items: center;
+   justify-content: space-around;
 }
 
 video {
@@ -66,3 +65,4 @@ video {
        transform: translateY(0px)  rotateY(-10deg);
    }
 }
+
