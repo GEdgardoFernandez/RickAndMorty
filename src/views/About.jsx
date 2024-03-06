@@ -1,23 +1,53 @@
 import Menu from "../components/menu/Menu"
-import SearchBar from "../components/searchbar/SearchBar"
 import Switch from "../components/switch/Switch"
 import Footer from "../components/footer/Footer"
 import React from "react"
-import Card from "../components/card/Card"
+import imagen from "..//..//src/recsource/fondos/fotoGuille.png"
+
 const About = () => {
     return (
-        <>
+        <div>
             <div className='header'>
                 <Menu />
-                <SearchBar onSearch={(characterID) => window.alert(characterID)} />
                 <Switch />
             </div>
-
-            <div className='container'>
-                <Card  />
+            <br />
+            <div className='about'>
+                <div>
+                <div className="contarinerAbout">
+         <button className="buttonAbout">X</button>
+         <div>
+            <div className="infoAbout">
+               <h2>Name: </h2>
+               <p className="elementoPAbout">Guillermo</p>
             </div>
+            <div className="infoAbout">
+               <h2>Status: </h2>
+               <p className="elementoPAbout">Live</p>
+            </div>
+            <div className="infoAbout">
+               <h2>Specie: </h2>
+               <p className="elementoPAbout">Human</p>
+            </div>
+            <div className="infoAbout">
+               <h2>Gender: </h2>
+               <p className="elementoPAbout">Masculino</p>
+            </div>
+            <div className="infoAbout">
+               <h2>Origin: </h2>
+               <p className="elementoPAbout">Hearth</p>
+            </div>
+         </div>
+         <div>
+            <img src={imagen} alt='Personaje' className="imgAbout" />
+         </div>
+      </div>
+                </div>
+                
+            </div>
+            <br />
             <Footer />
-        </>
+        </div>
     )
 }
 

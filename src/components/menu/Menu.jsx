@@ -5,15 +5,13 @@ const Menu = () => {
         <div className={style.container}>
             <ul>
                 <li>
-                    <a href="/characters">Characters</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li>
-                    <a href="/episodes">Episodes</a>
-                </li>
-                <li>
-                    <a href="/locations">Locations</a>
+                    <a href="/about">About</a>
                 </li>
             </ul>
+            <button className={style.buttonSinIn} onClick={() => { window.location.href = "/" }}></button>
         </div>
     );
 }

@@ -61,3 +61,20 @@ a:hover {
         transform: translateY(0px)  rotateY(-20deg);
     }
  }
+
+ .buttonSinIn{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+    background-color: green;
+    background-image: url(..//..//recsource/icons/login_14018647.png);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+ }
+ .buttonSinIn:hover{
+    cursor: pointer;
+    background-color: rgb(23, 226, 84);
+    border-color: rgb(20, 236, 85);
+ }
