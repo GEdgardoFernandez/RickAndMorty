@@ -1,4 +1,4 @@
-@import url(..//src/recsource/styleVar/var.css);
+@import url(..//src/assets/styleVar/var.css);
 
 /*@import url(./recsource/video/background.mp4);*/
 * {
@@ -7,7 +7,7 @@
 }
 
 .App {
-   background-image: url(./recsource/fondos/wallpaperbetter.com_1920x1080.jpg);
+   background-image: url(./assets/fondos/wallpaperbetter.com_1920x1080.jpg);
    background-size: cover;
    min-height: 100vh;
    background-attachment: fixed;

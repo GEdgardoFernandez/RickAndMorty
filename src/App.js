@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Landing from './views/Landing.jsx';
-import Home from './views/Home.jsx';
-import About from './views/About.jsx';
+import Landing from './Views/Landing.jsx';
+import Home from './Views/Home.jsx';
+import About from './Views/About.jsx';
 
 function App() {
 

@@ -1,8 +1,8 @@
-@import url(..//..//recsource/styleVar/var.css);
+@import url(..//..//assets/styleVar/var.css);
 
 @font-face {
     font-family: 'Get Schwifty';
-    src: url(..//..//recsource/font/get_schwifty.ttf);
+    src: url(..//..//assets/font/get_schwifty.ttf);
 }
 
 .container {
@@ -67,7 +67,7 @@ a:hover {
     height: 30px;
     width: 70px;
     background-color: green;
-    background-image: url(..//..//recsource/icons/login_14018647.png);
+    background-image: url(..//..//assets/icons/login_14018647.png);
     background-position: center;
     background-size: cover;
     align-items: center;

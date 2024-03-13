@@ -2,7 +2,7 @@ import Menu from "../components/menu/Menu"
 import Switch from "../components/switch/Switch"
 import Footer from "../components/footer/Footer"
 import React from "react"
-import imagen from "..//..//src/recsource/fondos/fotoGuille.png"
+import imagen from "..//..//src/assets/fondos/fotoGuille.png"
 
 const About = () => {
     return (

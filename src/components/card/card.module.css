@@ -1,8 +1,8 @@
-@import url(..//..//recsource/styleVar/var.css);
+@import url(..//..//assets/styleVar/var.css);
 
 @font-face {
     font-family: 'Get Schwifty';
-    src: url(..//..//recsource/font/get_schwifty.ttf);
+    src: url(..//..//assets/font/get_schwifty.ttf);
 }
 
 .contariner {
