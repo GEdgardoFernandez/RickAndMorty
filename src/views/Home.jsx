@@ -10,7 +10,7 @@ const Home = () => {
         <>
             <div className='header'>
                 <Menu />
-                <SearchBar onSearch={(characterID) => window.alert(characterID)} />
+                <SearchBar  />
                 <Switch />
             </div>
 
