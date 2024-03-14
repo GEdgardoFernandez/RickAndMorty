@@ -28,6 +28,7 @@ const Cards = function (props) {
                   gender={character.gender}
                   origin={character.origin.name}
                   image={character.image}
+                  episode={character.episode}
                   onClose={() => window.alert('Emulamos que se cierra la card')}
                />
             })

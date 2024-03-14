@@ -12,7 +12,24 @@
    min-height: 100vh;
    background-attachment: fixed;
    text-align: center;
-
+}
+.AppDetails {
+   background-image: url(./assets/fondos/wallpaperbetter.com_1920x1080.jpg);
+   background-size: cover;
+   min-height: 100vh;
+   min-width: 98.9vw;
+   background-attachment: fixed;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+.title {
+   font-weight: bolder;
+   font-size: 50px;
+   color: lime;
+   font-family: 'Get Schwifty';
+   text-shadow: 0 0 20px white, 0 0 10px white, 0 0 5px white;
+   margin: 5px;
 }
 
 .container {

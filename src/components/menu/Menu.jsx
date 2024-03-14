@@ -11,6 +11,9 @@ const Menu = () => {
                 <li>
                     <a href="/about">About</a>
                 </li>
+                <li>
+                    <a href="/favorites">Favorites</a>
+                </li>
             </ul>
         </div>
     );
