@@ -1,6 +1,6 @@
 .favorite {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -17,4 +17,43 @@
     50% {
         transform: translateY(0px)  rotateY(-10deg);
     }
+ }
+
+ .selectsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .cardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .select {
+    background-color: darkgreen;
+    color : black;
+    font-family: 'Get Schwifty';
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 5px;
+    border-radius:35% ;
+    text-align: center;
+    border: 1px solid black;
+ }
+ .select:hover{
+    background-color: rgb(23, 226, 84);
+    font-size: 17px;
+    transition: 190ms;
+ }
+ .select:focus{
+    background-color: rgb(23, 226, 84);
+    color: darkgreen;
+    font-size: 17px;
+    transition: 190ms;
  }

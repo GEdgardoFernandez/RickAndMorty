@@ -10,7 +10,6 @@ const About = () => {
       <div>
          <div className='header'>
             <Menu />
-            <Switch />
          </div>
          <br />
          <div className='about'>

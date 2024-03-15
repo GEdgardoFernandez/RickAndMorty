@@ -10,12 +10,12 @@ function Footer() {
             </p>
             <ul className={footerStyles.contact}>
                 <li>
-                    <a href="https://www.linkedin.com/in/guillermo-fern%C3%A1ndez-703b50267/">
+                    <a href="https://www.linkedin.com/in/guillermo-fern%C3%A1ndez-703b50267/" target="_blank">
                         <FaLinkedin size="1.5em" color="cyan" />
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/GEdgardoFernandez?tab=repositories">
+                    <a href="https://github.com/GEdgardoFernandez?tab=repositories" target="_blank">
                         <FaGithub size="1.5em" color="lime" />
                     </a>
                 </li>

@@ -17,15 +17,18 @@ const Favorite = ({ myFavorites }) => {
     console.log(myFavorites);
     return (
         <div className={style.favorite}>
+            <div className={style.selectsContainer}>
+
+            
             <div>
-                <select id="order" onChange={handleOrder}>
+                <select id="order" onChange={handleOrder} className={style.select}>
                     <option value="">Ordenar por: </option>
                     <option value="A">Ascendente</option>
                     <option value="D">Descendente</option>
                 </select>
             </div>
             <div>
-                <select id="filter" onChange={handleFilter}>
+                <select id="filter" onChange={handleFilter} className={style.select}>
                     <option value="">Filtrar por: </option>
                     <option value="All">All</option>
                     <option value="Male">Male</option>
@@ -33,18 +36,22 @@ const Favorite = ({ myFavorites }) => {
                     <option value="unknown">Unknown</option>
                 </select>
             </div>
+            </div>
+            <div className={style.cardContainer}>
             {myFavorites.map((fav) => (
                 <Card
                     key={fav.id}
+                    id={fav.id}
                     name={fav.name}
                     status={fav.status}
                     episodes={fav.episode}
                     species={fav.species}
                     gender={fav.gender}
                     image={fav.image}
-                    origin={fav?.origin}
+                    origin={fav.origin}
                 />
             ))}
+            </div>
         </div>
     );
 };

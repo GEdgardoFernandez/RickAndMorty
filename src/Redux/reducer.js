@@ -10,22 +10,19 @@ const initialState = {
 function reducer(state = initialState, action) {
     switch (action.type) {
         case ADD_FAV:
-            // Reemplaza myFavorites por allCharacters en la copia del estado global
             const updatedAllCharacters = [...state.allCharacters, action.payload];
             return {
                 ...state,
                 myFavorites: updatedAllCharacters,
-                allCharacters: updatedAllCharacters // Agrega el nuevo personaje a allCharacters
+                allCharacters: updatedAllCharacters
             };
         case REMOVE_FAV:
-            // Filtrar los favoritos para eliminar el personaje con la ID correspondiente
             const filteredFavorites = state.myFavorites.filter((fav) => fav.id !== Number(action.payload));
             return {
                 ...state,
                 myFavorites: filteredFavorites
             };
         case GET_CHARACTER_DETAILS:
-            // Agregar el personaje detallado a myFavorites
             return {
                 ...state,
                 characterDetail: action.payload
