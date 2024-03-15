@@ -308,4 +308,13 @@
         transform: translateY(0px)  rotateY(-10deg);
     }
  }
- 
+ .warning {
+  border: solid red 1px;
+  border-radius: 0.2em;
+}
+
+.error {
+  font-size: 8px;
+  color: red;
+  margin-left: 10em;
+}

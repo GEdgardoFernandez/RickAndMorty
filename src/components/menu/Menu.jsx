@@ -1,18 +1,20 @@
 import React from "react";
 import style from "./menu.module.css";
+import { useNavigate } from "react-router-dom";
 const Menu = () => {
+    const navigate = useNavigate();
     return (
         <div className={style.container}>
             <button className={style.buttonSinIn} onClick={() => { window.location.href = "/" }}></button>
             <ul>
                 <li>
-                    <a href="/home">Home</a>
+                    <a onClick={() => navigate("/home")}>Home</a>
                 </li>
                 <li>
-                    <a href="/about">About</a>
+                    <a onClick={() => navigate("/favorites")}>Favorites</a>
                 </li>
                 <li>
-                    <a href="/favorites">Favorites</a>
+                    <a onClick={() => navigate("/about")}>About</a>
                 </li>
             </ul>
         </div>

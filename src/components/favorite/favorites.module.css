@@ -1,0 +1,20 @@
+.favorite {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    animation: toggle__animation 3s infinite;
+}
+
+@keyframes toggle__animation {
+
+    0%,
+    100% {
+        transform: translateY(-10px)  rotateY(-10deg);
+    }
+ 
+    50% {
+        transform: translateY(0px)  rotateY(-10deg);
+    }
+ }

@@ -1,69 +1,29 @@
 @import url(..//..//assets/styleVar/var.css);
 
 @font-face {
-    font-family: 'Get Schwifty';
-    src: url(..//..//assets/font/get_schwifty.ttf);
+    font-family: 'BlackOpsOne';
+    src: url(..//..//assets/font/BlackOpsOne-Regular.ttf);
 }
 
-.contariner {
-    border: 2px solid var(--border);
-    padding: 25px;
-    margin: 10px;
-    width: 350px;
-    height: 500px;
-    background-color: #66BA4F;
-    box-shadow: 0px 0px 40px 10px #448C3F;
-    border-radius: 50%;
-    background:
-        radial-gradient(circle at 77% 80%, #FDFEB4 2.5%, transparent 2.5%),
-        radial-gradient(circle at 75% 83%, #FDFEB4 2%, transparent 2%),
-        radial-gradient(circle at 79% 83%, #FDFEB4 1%, transparent 1%),
-        radial-gradient(circle at 45% 13%, #FFFFD5 1.5%, transparent 1.5%),
-        radial-gradient(circle at 42% 13%, #FFFFD5 2%, transparent 2%),
-        radial-gradient(circle at 38% 14%, #FFFFD5 1.5%, transparent 1.5%),
-        radial-gradient(circle at 20% 24%, #FDFEB4 1%, transparent 1%),
-        radial-gradient(circle at 21% 23%, #FDFEB4 1%, transparent 1%),
-        radial-gradient(circle at 51% 13%, #FDFEB4 1%, transparent 1%),
-        radial-gradient(circle at 81% 33%, #FDFEB4 1%, transparent 1%),
-        radial-gradient(circle at 85% 36%, #FDFEB4 2%, transparent 2%),
-        radial-gradient(circle at 21% 46%, #FDFEB4 1%, transparent 1%),
-        radial-gradient(circle at 20% 51%, #FDFEB4 2%, transparent 2%),
-        radial-gradient(circle at 53% 51%, transparent 64%, #43A93E 64%),
-        radial-gradient(circle at 47% 59%, transparent 64%, #43843E 64%),
-        radial-gradient(circle at 47% 60%, transparent 59%, #1A9042 59%),
-        radial-gradient(circle at 50% 59%, transparent 55%, #1B863C 55%),
-        radial-gradient(circle at 45% 60%, transparent 55%, #399C49 55%),
-        radial-gradient(circle at 47% 60%, transparent 46%, #1A9042 46%),
-        radial-gradient(circle at 46% 55%, transparent 43%, #75B03B 43%),
-        radial-gradient(circle at 36% 55%, transparent 43%, #A9CB48 43%),
-        radial-gradient(circle at 50% 60%, transparent 40%, #66BA4F 40%),
-        radial-gradient(circle at 50% 53%, transparent 40%, #E5E051 37%),
-        radial-gradient(circle at 30% 48%, transparent 40%, #EAF157 37%),
-        radial-gradient(circle at 57% 69%, transparent 40%, #EAF157 40%),
-        radial-gradient(circle at 40% 88%, transparent 40%, #E9E072 37%),
-        radial-gradient(circle at 67% 54%, transparent 40%, #FAEB7B 37%),
-        radial-gradient(circle at 49% 35%, transparent 40%, #FFF8C5 37%),
-        radial-gradient(circle at 79% 59%, transparent 40%, #FFFE9C 37%),
-        radial-gradient(circle at 50% 50%, #FDFEB4 100%, #FDFEB4 100%);
-    opacity: 0.4;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.contariner:hover {
-    opacity: 1;
-
-}
 
 .button {
-    border-radius: 50%;
+    border-radius: 10px;
     background: none;
     color: darkred;
     border: 0.1px solid green;
     margin: 5px;
     padding: 5px;
-    font-family: 'Get Schwifty';
+    font-family: "BlackOpsOne";
     font-size: 15px;
     height: 35px;
-    width: 35px;
+    width: auto;
     font-weight: bolder;
 }
 
@@ -82,33 +42,35 @@
 }
 
 .button:active {
-    width: 32px;
-    height: 32px;
+    width: 1px;
+    height: 1px;
     letter-spacing: 0px;
-    font-size: smaller;
-    rotate: 360deg;
-    transition: 1s;
+    font-size: 1px;
+    rotate: 100deg;
+    transition: 2s;
 }
 
-h2 {
-    font-family: 'Get Schwifty';
+h1 {
+    font-family: 'BlackOpsOne';
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 7vh;
     margin: 5px;
-    color: darkgreen;
+    color: rgb(95, 212, 95);
     border-radius: 15%;
     text-shadow: grey 1px 0 12px;
-    backdrop-filter: blur(100px);
 }
 
 .elementoP {
-    font-family: 'Get Schwifty';
+    font-family: "BlackOpsOne";
     font-weight: bolder;
-    font-size: 15px;
+    font-size: 3vh;
     margin: 5px;
-    color: yellow;
+    color: rgb(205, 235, 213);
     border-radius: 15%;
-    text-shadow: black 2px 0 15px;
+    text-shadow: black 5px 0 15px;
+    max-width: 50%;
+    max-height: 50%;
+    text-align: center;
     backdrop-filter: blur(100px);
 }
 
@@ -119,19 +81,6 @@ h2 {
     align-items: center;
 }
 
-img {
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-
-}
-
-img:active {
-    rotate: 7200000000deg;
-    transition: 9s;
-    box-shadow: 0px 0px 8px 8px #8cec1e67;
-    -webkit-box-shadow: 0px 0px 8px 8px #70ec1e;
-}
 .infoEpisodes {
     display: flex;
     flex-direction: column;

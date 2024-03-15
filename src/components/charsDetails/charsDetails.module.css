@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'blackopsone';
+    src: url("..//..//assets/font/BlackOpsOne-Regular.ttf");
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'blackopsone';
+    animation: toggle__animation 3s infinite;
+}
+
+@keyframes toggle__animation {
+
+    0%,
+    100% {
+        transform: translateY(-10px)  rotateY(-10deg);
+    }
+ 
+    50% {
+        transform: translateY(0px)  rotateY(-10deg);
+    }
+ }   
+ 
+ .title {
+    font-weight: bolder;
+    font-size: 50px;
+    color: lime;
+    font-family: 'Get Schwifty';
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+ .text {
+    font-size: 20px;
+    font-weight: bold;
+    color: lime;
+    font-family: 'Get Schwifty';
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
