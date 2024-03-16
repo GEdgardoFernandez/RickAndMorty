@@ -29,7 +29,6 @@ const Modal = () => {
   };
   const modalStyles = {
     display: isModalOpen ? 'flex' : 'none',
-    // Otros estilos aquí si es necesario
   };
 
   return (

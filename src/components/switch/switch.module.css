@@ -2,6 +2,7 @@
     font-family: 'Get Schwifty';
     src: url(..//..//assets/font/get_schwifty.ttf);
 }
+
 .contSwitch {
     display: flex;
     justify-content: center;
@@ -9,6 +10,7 @@
     top: 10px;
     animation: toggle__animation 3s infinite;
 }
+
 .switch {
     font-size: 17px;
     position: relative;
@@ -17,7 +19,7 @@
     height: 2em;
     transform-style: preserve-3d;
     perspective: 300px;
-    
+
 }
 
 .switch::before {
@@ -98,10 +100,10 @@
 }
 
 .switchText {
-    margin-right: 10px; 
+    margin-right: 10px;
     font-size: 20px;
     font-family: 'Get Schwifty';
-    color:#8ad413;
+    color: #8ad413;
     text-shadow: #eae129;
     animation: toggle__animation 3s infinite;
 }

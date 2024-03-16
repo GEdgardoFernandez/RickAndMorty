@@ -54,15 +54,15 @@ a:hover {
 
     0%,
     100% {
-        transform: translateY(-10px)  rotateY(-20deg);
+        transform: translateY(-10px) rotateY(-20deg);
     }
- 
-    50% {
-        transform: translateY(0px)  rotateY(-20deg);
-    }
- }
 
- .buttonSinIn{
+    50% {
+        transform: translateY(0px) rotateY(-20deg);
+    }
+}
+
+.buttonSinIn {
     border-radius: 5px;
     height: 30px;
     width: 70px;
@@ -72,9 +72,10 @@ a:hover {
     background-size: cover;
     align-items: center;
     justify-content: center;
- }
- .buttonSinIn:hover{
+}
+
+.buttonSinIn:hover {
     cursor: pointer;
     background-color: rgb(23, 226, 84);
     border-color: rgb(20, 236, 85);
- }
+}

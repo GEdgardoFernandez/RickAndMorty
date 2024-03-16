@@ -2,6 +2,7 @@
     font-family: 'blackopsone';
     src: url("..//..//assets/font/BlackOpsOne-Regular.ttf");
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -16,27 +17,28 @@
 
     0%,
     100% {
-        transform: translateY(-10px)  rotateY(-10deg);
+        transform: translateY(-10px) rotateY(-10deg);
     }
- 
+
     50% {
-        transform: translateY(0px)  rotateY(-10deg);
+        transform: translateY(0px) rotateY(-10deg);
     }
- }   
- 
- .title {
+}
+
+.title {
     font-weight: bolder;
     font-size: 50px;
     color: lime;
     font-family: 'Get Schwifty';
     margin-top: 20px;
     margin-bottom: 20px;
- }
- .text {
+}
+
+.text {
     font-size: 20px;
     font-weight: bold;
     color: lime;
     font-family: 'Get Schwifty';
     margin-top: 20px;
     margin-bottom: 20px;
- }
+}

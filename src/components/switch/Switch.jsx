@@ -3,7 +3,7 @@ import style from './switch.module.css';
 
 const Switch = ({ darkMode, setDarkMode }) => {
     const handleToggle = () => {
-        setDarkMode(prevDarkMode => !prevDarkMode); // Cambia el modo de color en App
+        setDarkMode(prevDarkMode => !prevDarkMode);
     };
 
     return (

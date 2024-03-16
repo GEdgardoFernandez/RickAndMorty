@@ -42,13 +42,11 @@ function reducer(state = initialState, action) {
             };
         case FILTER:
             if (action.payload === 'All') {
-                // Si el filtro es 'All', simplemente devuelve todos los favoritos
                 return {
                     ...state,
                     myFavorites: [...state.allCharacters]
                 };
             } else {
-                // Filtra los personajes favoritos por género
                 const filteredCharacters = state.allCharacters.filter(character => {
                     return character.gender.toLowerCase() === action.payload.toLowerCase();
                 });

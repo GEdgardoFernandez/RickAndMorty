@@ -16,7 +16,6 @@ const Cards = function (props) {
       fetchData();
    }, [page]);
 
-   // Filtrar personajes según el término de búsqueda
    const filteredCharacters = characters.filter(character =>
       character.name.toLowerCase().includes(searchTerm.toLowerCase())
    );

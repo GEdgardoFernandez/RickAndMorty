@@ -19,7 +19,7 @@ const Card = function (props) {
 
    const handleFavorite = () => {
       if (!isFav) {
-         props.addFav({ // Llama a la acción addFav usando dispatch
+         props.addFav({
             id: props.id,
             name: props.name,
             status: props.status,
@@ -30,7 +30,7 @@ const Card = function (props) {
          
       } else {
          setIsFav(!isFav);
-         props.removeFav(props.id); // Llama a la acción removeFav usando dispatch
+         props.removeFav(props.id);
       }
       
    };

@@ -10,7 +10,7 @@ import Details from './Views/Details.jsx';
 function App() {
    const [darkMode, setDarkMode] = useState(false);
 
-   return ( 
+   return (
       <div className={`App ${darkMode ? 'dark-mode' : ''}`} data-theme={darkMode ? 'dark' : 'light'}>
          <Routes>
             <Route path='/' element={<Landing />} />

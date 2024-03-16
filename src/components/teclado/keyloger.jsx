@@ -28,7 +28,6 @@ const KeyBoard = function (props) {
   const validateForm = () => {
     let newErrors = {};
   
-    // Validación del campo de email
     if (!form.email) {
       newErrors.email = "Email is required";
     } else if (!validateEmail(form.email)) {
@@ -37,7 +36,6 @@ const KeyBoard = function (props) {
       newErrors.email = "";
     }
   
-    // Validación del campo de password
     if (!form.password) {
       newErrors.password = "Password is required";
     } else if (form.password !== truePassword) {
@@ -46,9 +44,9 @@ const KeyBoard = function (props) {
       newErrors.password = "";
     }
   
-    setErrors(newErrors); // Actualizar el estado de errores
+    setErrors(newErrors); 
   
-    // Devolver verdadero si no hay errores
+  
     return Object.values(newErrors).every((error) => error === "");
   };
 
