@@ -27,7 +27,7 @@ const KeyBoard = function (props) {
 
   const validateForm = () => {
     let newErrors = {};
-  
+
     if (!form.email) {
       newErrors.email = "Email is required";
     } else if (!validateEmail(form.email)) {
@@ -35,7 +35,7 @@ const KeyBoard = function (props) {
     } else {
       newErrors.email = "";
     }
-  
+
     if (!form.password) {
       newErrors.password = "Password is required";
     } else if (form.password !== truePassword) {
@@ -43,10 +43,10 @@ const KeyBoard = function (props) {
     } else {
       newErrors.password = "";
     }
-  
-    setErrors(newErrors); 
-  
-  
+
+    setErrors(newErrors);
+
+
     return Object.values(newErrors).every((error) => error === "");
   };
 

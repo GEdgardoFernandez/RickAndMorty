@@ -78,14 +78,15 @@
     margin-bottom: 20px;
     font-size: 20px;
 }
+
 @keyframes toggle__animation {
 
     0%,
     100% {
-        transform: translateY(-10px)  rotateY(-20deg);
+        transform: translateY(-10px) rotateY(-20deg);
     }
- 
+
     50% {
-        transform: translateY(0px)  rotateY(-20deg);
+        transform: translateY(0px) rotateY(-20deg);
     }
- }
+}

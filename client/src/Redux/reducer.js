@@ -1,4 +1,4 @@
-import { ADD_FAV, REMOVE_FAV, FILTER, ORDER, GET_CHARACTER_DETAILS, SET_SEARCH_TERM} from "./Actions";
+import { ADD_FAV, REMOVE_FAV, FILTER, ORDER, GET_CHARACTER_DETAILS, SET_SEARCH_TERM } from "./Actions";
 
 const initialState = {
     myFavorites: [],

@@ -6,7 +6,7 @@ import Cards from "../components/cards/Cards";
 import characters from "../data.js";
 
 const Home = ({ darkMode, setDarkMode }) => {
-   return ( 
+   return (
       <>
          <div className='header'>
             <Menu />
