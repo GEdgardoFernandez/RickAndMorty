@@ -4,21 +4,23 @@ import NavPage from '..//navpage/navpage.jsx';
 
 const Cards = function (props) {
    const [page, setPage] = useState(1);
-   const [characters, setCharacters] = useState([]);
+   const [characters, setCharacters] = useState({});
    const [searchTerm, setSearchTerm] = useState('');
 
    useEffect(() => {
       async function fetchData() {
-         const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
+         const response = await fetch(`http://localhost:3001/rickandmorty/character/${page}`);
+         console.log("Response:", response);
          const data = await response.json();
-         setCharacters(data.results);
+         console.log("Data:", data);
+         setCharacters(data);
       }
       fetchData();
    }, [page]);
-
-   const filteredCharacters = characters.filter(character =>
-      character.name.toLowerCase().includes(searchTerm.toLowerCase())
-   );
+   console.log("Characters:", characters);
+   /*    const filteredCharacters = characters.filter(character =>
+         character.name.toLowerCase().includes(searchTerm.toLowerCase())
+      ); */
 
    return (
       <div className="containerMain">
@@ -34,7 +36,7 @@ const Cards = function (props) {
          <div>
             <NavPage page={page} setPage={setPage} />
          </div>
-         <div className="container">
+         {/*          <div className="container">
             {
                filteredCharacters.map((character) => (
                   <Card
@@ -51,6 +53,20 @@ const Cards = function (props) {
                   />
                ))
             }
+         </div> */}
+         <div className="container">
+            {characters ? <Card
+               key={characters.id}
+               id={characters.id}
+               name={characters.name}
+               status={characters.status}
+               species={characters.species}
+               gender={characters.gender}
+               /* origin={characters.origin} */
+               image={characters.image}
+               episode={characters.episode}
+               onClose={() => window.alert('Emulamos que se cierra la card')}
+            /> : <div>Cargando...</div>}
          </div>
          <div>
             <NavPage page={page} setPage={setPage} />

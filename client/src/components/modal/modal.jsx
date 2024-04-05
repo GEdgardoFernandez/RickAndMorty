@@ -24,7 +24,7 @@ const Modal = () => {
     setIsModalOpen(false);
   };
   const handleDelete = () => {
-    // Lógica para borrar el último dígito
+
     setDisplayValue(displayValue.slice(0, -1));
   };
   const modalStyles = {

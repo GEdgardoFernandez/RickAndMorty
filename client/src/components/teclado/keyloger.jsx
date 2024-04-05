@@ -22,7 +22,7 @@ const KeyBoard = function (props) {
   };
 
   const trueEmail = "guillermo@email.com";
-  const truePassword = "1234password";
+  const truePassword = "pass1234";
   const navigate = useNavigate();
 
   const validateForm = () => {
