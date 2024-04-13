@@ -1,8 +1,10 @@
-import axios from 'axios';
 
-const getCharById = (res, id) => {
-    const apiKey = "GEdgardoFernandez";
-    const apiUrl = `https://rym2.up.railway.app/api/character/${id}?key=${apiKey}`;
+
+const getCharById = (req, res) => {
+
+    const {id} = req.params;
+    const apiUrl = `https://rym2.up.railway.app/api/character/${id}?key=GEdgardoFernandez`;
+
     axios.get (apiUrl).then(response => {
         const {name, gender, species, origin, image, status} = response.data;
         const character = {
@@ -17,8 +19,10 @@ const getCharById = (res, id) => {
         console.log("character:", character);
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify(character));
-        return;
+    }) 
+    .catch(error => {
+        return res.status(400).send({ error: error.message });
     })
 }
 
-export default getCharById
+export {getCharById}
