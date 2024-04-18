@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import style from "./modal.module.css";
 import KeyBoard from "../teclado/keyloger";
 
-
 const Modal = () => {
   const [isModalOpen, setIsModalOpen] = useState(true);
   const [displayValue, setDisplayValue] = useState("");
-
   const handleVerification = () => {
     console.log("Código ingresado:", displayValue);
     if (displayValue === '0137') {
@@ -30,7 +28,7 @@ const Modal = () => {
   const modalStyles = {
     display: isModalOpen ? 'flex' : 'none',
   };
-
+ 
   return (
     <div style={modalStyles} className={style.containerModal}>
       <KeyBoard onOk={handleVerification} onDelete={handleDelete} setDisplayValue={setDisplayValue} />

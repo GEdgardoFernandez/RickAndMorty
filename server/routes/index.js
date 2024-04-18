@@ -1,21 +1,22 @@
-
-import { Router } from "express";
+import express from 'express';
+const router = express.Router();
 import { getCharById } from "../controllers/getCharById.js";
 import { postFav, deleteFav } from "../controllers/handleFavorites.js";
 import { login } from "../routes/login.js";
-import express from "express";
 
-Router.get("/character/:id", (req, res) => {
+router.get("/character/:id", (req, res) => {
     getCharById(req, res);
-});
-Router.get("/login", (req, res) => {
-    login(req, res);
 })
-Router.post("/fav", (req, res) => {
-    postFav(req, res);
-})
-Router.delete("/fav/:id", (req, res) => {
+router.delete("/fav/:id", (req, res) => {
     deleteFav(req, res);
 })
+router.post("/fav", (req, res) => {
+    postFav(req, res);
+})
+router.use("/login", (req, res) => {
+    login(req, res);
+})
 
-export {Router}
+
+
+export {router}

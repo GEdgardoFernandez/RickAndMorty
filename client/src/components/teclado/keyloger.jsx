@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./keyloger.module.css";
 import { useNavigate } from "react-router-dom";
-import {
-  validateEmail,
-  validateLastPass,
-} from "..//..//assets/functions/functionValida.js";
+import axios from "axios";
 const KeyBoard = function (props) {
+  const truePassword = "pass1234";
+  const navigate = useNavigate();
+  const regexEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i;
   const [form, setForm] = React.useState({
     email: "",
     password: "",
@@ -14,23 +14,26 @@ const KeyBoard = function (props) {
     email: "",
     password: "",
   });
+  const [access, setAccess] = React.useState(false);
+  useEffect(() => {
+    !access && navigate("/");
+  },[access, navigate])
 
   const handleChange = (event) => {
     const property = event.target.name;
     const value = event.target.value;
+    
     setForm({ ...form, [property]: value });
+    setErrors(validateForm({...form, [property]: value}))
   };
 
-  const trueEmail = "guillermo@email.com";
-  const truePassword = "pass1234";
-  const navigate = useNavigate();
 
-  const validateForm = () => {
+  const validateForm = (form) => {
     let newErrors = {};
 
     if (!form.email) {
       newErrors.email = "Email is required";
-    } else if (!validateEmail(form.email)) {
+    } else if (!regexEmail.test(form.email)) {
       newErrors.email = "Invalid email";
     } else {
       newErrors.email = "";
@@ -49,18 +52,24 @@ const KeyBoard = function (props) {
 
     return Object.values(newErrors).every((error) => error === "");
   };
-
-  const submitHandler = (event) => {
-    event.preventDefault();
-    if (trueEmail === form.email && truePassword === form.password) {
-      navigate("/home");
-    } else {
-      alert("Login Fallido");
-    }
-  };
-
+console.log(form.email, form.password)
+  function login(UserData) {
+   const { email, password } = UserData
+    const URL = 'http://localhost:3001/rickandmorty/login/';
+    axios(URL + `?email=${email}&password=${password}`).then(({ data }) => {
+       const { access } = data;
+       setAccess(data);
+       access && navigate('/home');
+    }).catch(error => {
+      console.error("Error de inicio de sesion:", error);
+    })
+ }
+ const handleSubmit  = (event) => {
+  event.preventDefault();
+  login(form);
+ }
   return (
-    <form className={style.form} onSubmit={submitHandler}>
+    <form className={style.form} onSubmit={handleSubmit}>
       <div className={style.formTitle}>
         <span>sign in to your</span>
       </div>

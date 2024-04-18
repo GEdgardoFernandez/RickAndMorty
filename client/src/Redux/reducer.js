@@ -1,3 +1,4 @@
+
 import { ADD_FAV, REMOVE_FAV, FILTER, ORDER, GET_CHARACTER_DETAILS, SET_SEARCH_TERM } from "./Actions";
 
 const initialState = {
@@ -10,18 +11,9 @@ const initialState = {
 function reducer(state = initialState, action) {
     switch (action.type) {
         case ADD_FAV:
-            const updatedAllCharacters = [...state.allCharacters, action.payload];
-            return {
-                ...state,
-                myFavorites: updatedAllCharacters,
-                allCharacters: updatedAllCharacters
-            };
+            return { ...state, myFavorites: action.payload, allCharacters: action.payload };
         case REMOVE_FAV:
-            const filteredFavorites = state.myFavorites.filter((fav) => fav.id !== Number(action.payload));
-            return {
-                ...state,
-                myFavorites: filteredFavorites
-            };
+            return { ...state, myFavorites: action.payload };
         case GET_CHARACTER_DETAILS:
             return {
                 ...state,

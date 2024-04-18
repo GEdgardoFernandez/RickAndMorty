@@ -1,7 +1,7 @@
 import express from 'express';
 const server = express();
 const PORT = 3001;
-import {Router} from "./routes/index.js"
+import {router} from "./routes/index.js"
 
 
 server.use((req, res, next) => {
@@ -20,7 +20,7 @@ server.use((req, res, next) => {
 
  server.use(express.json());
  
- server.use('/rickandmorty', Router);
+ server.use('/rickandmorty', router);
 
  server.listen(PORT, () => {
     console.log('Server raised in port: ' + PORT);

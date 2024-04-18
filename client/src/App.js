@@ -6,6 +6,10 @@ import Home from './Views/Home.jsx';
 import About from './Views/About.jsx';
 import Favorites from './Views/Favorites.jsx';
 import Details from './Views/Details.jsx';
+
+
+
+
 function App() {
    const [darkMode, setDarkMode] = useState(false);
 

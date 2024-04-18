@@ -7,19 +7,25 @@ export default function SearchBar(props) {
    const [search, setSearch] = useState('');
    const dispatch = useDispatch();
 
-   const handleSearch = () => {
-      dispatch(setSearchTerm(search));
+   const handleSearch = async () => {
+      try {
+         await dispatch(setSearchTerm(search));
+      } catch (error) {
+         console.error('Error occurred while searching:', error);
+      }
    };
 
    return (
       <div className={style.container}>
-         <input className={style.input} type='text'
+         <input
+            className={style.input}
+            type='text'
             name='search'
             placeholder='Search Character'
             value={search}
-            onChange={(e) => setSearch(e.target.value)} />
+            onChange={(e) => setSearch(e.target.value)}
+         />
          <button className={style.button} onClick={handleSearch}>Search</button>
       </div>
    );
-
 }
