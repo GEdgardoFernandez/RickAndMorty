@@ -19,7 +19,7 @@ describe("Test de RUTAS", () => {
             expect(response.body).toHaveProperty('image');
         });
         it('Si hay un error responde con status: 500', () => {
-            
+
         })
     })
 })

@@ -6,7 +6,7 @@ const getCharById = async (req, res) => {
         const apiUrl = `https://rym2.up.railway.app/api/character/${id}?key=GEdgardoFernandez`;
 
         const response = await axios.get(apiUrl);
-        
+
         const { name, gender, species, origin, image, status } = response.data;
         const character = {
             id: id,
