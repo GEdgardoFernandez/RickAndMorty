@@ -25,7 +25,8 @@ const Card = function (props) {
             status: props.status,
             species: props.species,
             image: props.image,
-            gender: props.gender
+            gender: props.gender,
+            origin: props.origin
          });
          
       } else {
@@ -61,7 +62,7 @@ const Card = function (props) {
             </div>
             <div className={style.info}>
                <h2>Origin: </h2>
-               <p className={style.elementoP}>{props.origin}</p>
+               <p className={style.elementoP}>{props.origin?.name}</p>
             </div>
          </div>
          <div>

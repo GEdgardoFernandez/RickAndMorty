@@ -1,11 +1,12 @@
-import express from 'express';
-import { server } from '../src/app.js'; 
-import { router } from "./routes/index.js";
 
+const { server } = require('./app');
+const { conn } = require('./DB_connection');
 const PORT = 3001;
 
-server.use('/rickandmorty', router);
-
-server.listen(PORT, () => {
-    console.log('Server raised in port: ' + PORT);
-});
+conn.sync({ force: true })
+.then(() => {
+    server.listen(PORT, () => {
+        console.log(`Servidor escuchando en el puerto ${PORT}`)
+    })  
+})
+.catch((error) => console.log(error.message))

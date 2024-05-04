@@ -1,4 +1,4 @@
-import axios from 'axios';
+const axios = require('axios');
 
 const getCharById = async (req, res) => {
     try {
@@ -26,4 +26,4 @@ const getCharById = async (req, res) => {
     }
 }
 
-export { getCharById };
+module.exports = getCharById
