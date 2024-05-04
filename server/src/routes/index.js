@@ -2,7 +2,7 @@ import express from 'express';
 const router = express.Router();
 import { getCharById } from "../controllers/getCharById.js";
 import { postFav, deleteFav } from "../controllers/handleFavorites.js";
-import { login } from "../routes/login.js";
+import { login } from "./login.js";
 
 router.get("/character/:id", (req, res) => {
     getCharById(req, res);

@@ -1,4 +1,4 @@
-import users from "../utils/users.js";
+import users from "../../utils/users.js";
 const login = (req, res) => {
     const access = false;
     let { email, password } = req.query;

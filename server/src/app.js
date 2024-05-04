@@ -1,7 +1,7 @@
 import express from 'express';
 const server = express();
 const PORT = 3001;
-import {router} from "./routes/index.js"
+import {router} from "./routes/index.js";
 
 
 server.use((req, res, next) => {
