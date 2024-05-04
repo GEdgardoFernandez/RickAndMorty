@@ -62,7 +62,7 @@ const Cards = function (props) {
                status={characters.status}
                species={characters.species}
                gender={characters.gender}
-               origin={characters.origi}
+               origin={characters.origin?.name}
                image={characters.image}
                episode={characters.episode}
                onClose={() => window.alert('Emulamos que se cierra la card')}

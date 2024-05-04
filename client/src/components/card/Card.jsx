@@ -19,6 +19,7 @@ const Card = function (props) {
 
    const handleFavorite = () => {
       if (!isFav) {
+         setIsFav(true);
          props.addFav({
             id: props.id,
             name: props.name,
@@ -30,7 +31,7 @@ const Card = function (props) {
          });
          
       } else {
-         setIsFav(!isFav);
+         setIsFav(false);
          props.removeFav(props.id);
       }
       
