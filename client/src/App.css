@@ -9,8 +9,8 @@
 .App {
    background-image: url(./assets/fondos/wallpaperbetter.com_1920x1080.jpg);
    background-size: cover;
-   min-height: 100vw;
    min-width: 100vw;
+   min-height: 100vh;
    background-attachment: fixed;
    text-align: center;
 }
@@ -25,13 +25,11 @@
 }
 
 .container {
-
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: center;
-   min-width: 100vw;
-   min-height: 60vh;
+   min-width: 100vh;
    animation: toggle__animation 3s infinite;
 }
 
@@ -41,7 +39,6 @@
    flex-direction: column;
    justify-content: center;
    min-width: 100vw;
-   min-height: 60vh;
    animation: toggle__animation 3s infinite;
 }
 
@@ -253,6 +250,14 @@ video {
    background-color: darkgreen;
    color: yellowgreen;
    box-shadow: 5px 5px 5px 0px lime;
+}
+.footer {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: none;
+   height: auto;
 }
 
 /********DARK MODE********/

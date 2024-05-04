@@ -15,7 +15,7 @@ const Home = ({ darkMode, setDarkMode }) => {
             <div className='container'>
                <Cards />
             </div>
-            <Footer />
+            <Footer className="footer" />
          </Suspense>
       </>
 
